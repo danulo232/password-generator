@@ -5,7 +5,7 @@ from PyQt5.QtGui import *
 
 from itertools import permutations
 
-from PyQt5.uic.properties import QtCore
+# from PyQt5.uic.properties import QtCore
 
 class Window(QMainWindow):
     def __init__(self):
@@ -67,12 +67,6 @@ class Window(QMainWindow):
         self.answer.setStyleSheet("color: rgb(255, 255, 255);  "
                                   "font-weight: 700;")
         self.answer.setMaximumHeight(130)
-        #self.answer.setWordWrap(True)
-
-        ""'''self.prokrutka_text = QScrollArea()
-        self.prokrutka_text.setWidget(self.answer)
-        self.prokrutka_text.setWidgetResizable(True)
-        self.prokrutka_text.setGeometry(40, 340, 840, 130)'''""
 
         self.g = QGridLayout(self.centrw)
         self.g.addWidget(self.btn_info, 1, 2)
